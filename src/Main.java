@@ -12,17 +12,17 @@ public class Main {
         blockChainList.add(genesis);
 
 
-        Block blockX = new Block("Hello",blockChainList.get(blockChainList.size()-1).hashCode());
-        blockChainList.add(blockX);
+        Block block1 = new Block("Hello",blockChainList.get(blockChainList.size()-1).hashCode());
+        blockChainList.add(block1);
 
 
 
-        Block blockY = new Block("This is",blockChainList.get(blockChainList.size()-1).hashCode());
-        blockChainList.add(blockX);
+        Block block2 = new Block("This is",blockChainList.get(blockChainList.size()-1).hashCode());
+        blockChainList.add(block2);
 
 
-        Block blockZ = new Block("My BlockChain",blockChainList.get(blockChainList.size()-1).hashCode());
-        blockChainList.add(blockX);
+        Block block3 = new Block("My BlockChain",blockChainList.get(blockChainList.size()-1).hashCode());
+        blockChainList.add(block3);
 
 
         blockChainList.forEach(System.out::println);
